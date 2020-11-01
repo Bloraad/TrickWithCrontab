@@ -15,4 +15,6 @@ while [[ $(cat /root/king.txt) != "[usernameHere]" ]]; do echo "[usernamehere]" 
 ```
 
 > 3. method three 
-```* * * * * echo "[usernameHere]" >> /root/king.txt >/dev/null 2>&1```
+```
+* * * * * echo "[usernameHere]" >> /root/king.txt >/dev/null 2>&1
+```
