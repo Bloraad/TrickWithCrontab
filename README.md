@@ -14,7 +14,12 @@ done
 while [[ $(cat /root/king.txt) != "[usernameHere]" ]]; do echo "[usernamehere]" >> /root/king.txt; done
 ```
 
-> 3. method three 
+> 3. Method three 
 ```
 * * * * * echo "[usernameHere]" >> /root/king.txt >/dev/null 2>&1
+```
+> 4. Method four
+```
+LFILE=/root/king.txt
+echo "<YOUR USERNAME>" | cp /dev/stdin "$LFILE"
 ```
