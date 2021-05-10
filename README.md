@@ -11,7 +11,7 @@ done
 > 2. Method two
 
 ```
-while [[ $(cat /root/king.txt) != "qccq" ]]; do echo "[qccq]" > /root/king.txt; done
+while [[ $(cat /root/king.txt) != "qccq" ]]; do echo "qccq" > /root/king.txt; done
 ```
 
 > 3. Method three 
