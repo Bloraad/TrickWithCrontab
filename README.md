@@ -4,22 +4,22 @@
 #!/bin/bash
 while :
 do
-        eval "echo [usernameHere] >> /root/king.txt"
+        eval "echo qccq >> /root/king.txt"
         eval " > /root/king.txt"
 done
 ```
 > 2. Method two
 
 ```
-while [[ $(cat /root/king.txt) != "[usernameHere]" ]]; do echo "[usernamehere]" >> /root/king.txt; done
+while [[ $(cat /root/king.txt) != "qccq" ]]; do echo "[qccq]" > /root/king.txt; done
 ```
 
 > 3. Method three 
 ```
-* * * * * echo "[usernameHere]" >> /root/king.txt >/dev/null 2>&1
+* * * * * echo "qccq" >> /root/king.txt >/dev/null 2>&1
 ```
 > 4. Method four
 ```
 LFILE=/root/king.txt
-echo "<YOUR USERNAME>" | cp /dev/stdin "$LFILE"
+echo "qccq" | cp /dev/stdin "$LFILE"
 ```
